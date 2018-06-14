@@ -28,11 +28,14 @@
 ///////////////////////
 /// Libraries Used ///
 /////////////////////
-// Hypereasy CD4067 multiplexer library https://github.com/sumotoy/Multiplexer4067
+// Hypereasy CD4067 multiplexer library
+// https://github.com/sumotoy/Multiplexer4067
 #include "Multiplexer4067.h"
-// Arduino interrupt library, designed for Arduino Uno/Mega 2560/Leonardo/Due https://github.com/GreyGnome/EnableInterrupt
+// Arduino interrupt library, designed for Arduino Uno/Mega 2560/Leonardo/Due
+// https://github.com/GreyGnome/EnableInterrupt
 #include "EnableInterrupt.h"
-// A MIDI library over USB, based on PluggableUSB https://github.com/arduino-libraries/MIDIUSB
+// A MIDI library over USB, based on PluggableUSB
+// https://github.com/arduino-libraries/MIDIUSB
 #include "MIDIUSB.h"
 
 
@@ -262,7 +265,7 @@ void buttons() {
           controlChange(midiChannel + 1, midiCC + i, 127);
           MidiUSB.flush();
 
-          // * The following commented code is for turning on LEDs from corresponding swtich butttons regardless of MIDI out *//
+          // ** The following commented code is for turning on LEDs from corresponding swtich butttons regardless of MIDI out ** //
 
           //Check for button pin (index of NButtons) to turn on/off its corresponding LED pin (index of NLEDs)
           //          switch (i) {
