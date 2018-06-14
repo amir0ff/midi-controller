@@ -8,7 +8,8 @@ Traktor Pro 2 MIDI Mappings file: [Download](https://goo.gl/JWAb5h55pk)
     MIDI CC 81 = Monitor Cue On (Deck A)
     MIDI CC 82 = Filter On (Deck B)
 
-    Components used:
+Components used:
+
     Encoders (1x)
     Potentiometers (8x)
     Momentary switch buttons (6x)
