@@ -1,6 +1,6 @@
-MIDI Controller on Aruidno (Pro) Micro 5V 16MHz / ATmega32u4
+## MIDI Controller on Aruidno (Pro) Micro 5V 16MHz / ATmega32u4
 
-Traktor Pro 2 MIDI Mappings file: https://goo.gl/JWAb5h55pk
+Traktor Pro 2 MIDI Mappings file: [Download](https://goo.gl/JWAb5h55pk)
     
     MIDI Channel = 4
     Control Change Message Table:
