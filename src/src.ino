@@ -283,23 +283,21 @@ void buttons() {
           controlChange(midiChannel + 1, midiCC + i, 127);
           MidiUSB.flush();
 
-          // ** The following commented code is for turning on LEDs from corresponding swtich butttons regardless of MIDI out ** //
-
-          //Check for button pin (index of NButtons) to turn on/off its corresponding LED pin (index of NLEDs)
-          //          switch (i) {
-          //            case 0:
-          //              ledState[0] = !ledLastState[0];
-          //              digitalWrite(LedPin[0], ledState[0]);
-          //              break;
-          //            case 2:
-          //              ledState[1] = !ledLastState[1];
-          //              digitalWrite(LedPin[1], ledState[1]);
-          //              break;
-          //            case 3:
-          //              ledState[2] = !ledLastState[2];
-          //              digitalWrite(LedPin[2], ledState[2]);
-          //              break;
-          //          }
+          // Check for button pin (index of NButtons) to turn on / off its corresponding LED pin (index of NLEDs)
+          switch (i) {
+            case 0:
+              ledState[0] = !ledLastState[0];
+              digitalWrite(LedPin[0], ledState[0]);
+              break;
+            case 2:
+              ledState[1] = !ledLastState[1];
+              digitalWrite(LedPin[1], ledState[1]);
+              break;
+            case 3:
+              ledState[2] = !ledLastState[2];
+              digitalWrite(LedPin[2], ledState[2]);
+              break;
+          }
         }
         else {
           controlChange(midiChannel + 1, midiCC + i, 0);
