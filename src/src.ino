@@ -16,7 +16,7 @@
        4. Standard (3501) Blue 3mm diffused LEDs (4x blue, 2x green)
        5. 16-Channel Analog/Digital CD74HC4067 Multiplexer (1x)
 
-    Traktor Pro 2 mappings file: https://goo.gl/JW5b5455pk
+    Fritzing schematics file: https://goo.gl/JW5b5455pk
 
     Created 09/05/2018
     By Amir Off
