@@ -4,6 +4,7 @@ The controller has been tested on Native Instrument's Traktor Pro 2 and Ableton 
 
 > It doesn't require any external software such as "The Hairless MIDI" since this is MIDI USB Class Compliant device.
 
+MIDI In can be assigned from the software to any knob, slide or button you map it to, but MIDI Out has to be configured in the `readMIDI()` method in the code.
 ### MIDI Out mappings:
 
 * MIDI Channel = 4
