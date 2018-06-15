@@ -24,3 +24,6 @@ Traktor Pro 2 mappings file: [Download](https://goo.gl/JWAb5h55pk)
 7. 16-Channel Analog/Digital CD74HC4067 Multiplexer (1x)
 
 Fritzing schematics file: [Download](https://goo.gl/JW5b5455pk)
+
+### USB device name change:
+If you want to change your MIDI controller device name go ahead and read this [here](http://liveelectronics.musinou.net/MIDIdeviceName.php)
