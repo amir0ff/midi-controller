@@ -1,5 +1,5 @@
 /*
-    MIDI Controller on Aruidno (Pro) Micro 5V 16MHz / ATmega32u4
+    MIDI Controller on Arduino (Pro) Micro 5V/16MHz
 
     MIDI Out mappings:
        MIDI Channel = 4
@@ -10,11 +10,13 @@
     Traktor Pro 2 mappings file: https://goo.gl/JWAb5h55pk
 
     Electronic components used:
-       1. Encoders (1x)
-       2. Potentiometers (8x)
-       3. Momentary switch buttons (6x)
-       4. Standard (3501) Blue 3mm diffused LEDs (4x blue, 2x green)
-       5. 16-Channel Analog/Digital CD74HC4067 Multiplexer (1x)
+       1. Arduino (Pro) Micro 5V/16MHz (ATmega32u4) (1x)
+       2. Rotary encoder (1x)
+       3. 10k Rotary potentiometer (8x)
+       4. 10k Slide potentiometer (3x)
+       5. Momentary pushbutton switch (6x)
+       6. Standard (3501) Blue 3mm diffused LEDs (4x blue, 2x green)
+       7. 16-Channel Analog/Digital CD74HC4067 Multiplexer (1x)
 
     Fritzing schematics file: https://goo.gl/JW5b5455pk
 
