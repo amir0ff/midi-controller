@@ -1,7 +1,6 @@
 ## MIDI Controller on Arduino (Pro) Micro 5V/16MHz
 
-Traktor Pro 2 MIDI Mappings file: [Download](https://goo.gl/JWAb5h55pk)
-    
+
 MIDI Out mappings:
 
     MIDI Channel = 4
@@ -9,6 +8,7 @@ MIDI Out mappings:
     MIDI CC 80 = Filter On (Deck A)
     MIDI CC 81 = Monitor Cue On (Deck A)
     MIDI CC 82 = Filter On (Deck B)
+Traktor Pro 2 MIDI Mappings file: [Download](https://goo.gl/JWAb5h55pk)
 
 Electronic components used:
 
