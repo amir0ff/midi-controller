@@ -1,27 +1,29 @@
 /*
-     MIDI Controller on Aruidno (Pro) Micro 5V 16MHz / ATmega32u4
+    MIDI Controller on Aruidno (Pro) Micro 5V 16MHz / ATmega32u4
 
-     Traktor Pro 2 Mappings file: https://goo.gl/JWAb5h55pk
+    MIDI Out mappings:
+       MIDI Channel = 4
+       MIDI CC 80 = Filter On (Deck A)
+       MIDI CC 81 = Monitor Cue On (Deck A)
+       MIDI CC 82 = Filter On (Deck B)
 
-        MIDI Channel = 4
-        Control Change Message Table:
-        MIDI CC 80 = Filter On (Deck A)
-        MIDI CC 81 = Monitor Cue On (Deck A)
-        MIDI CC 82 = Filter On (Deck B)
+    Traktor Pro 2 mappings file: https://goo.gl/JWAb5h55pk
 
-  Components used:
-    1. Encoders (1x)
-    2. Potentiometers (8x)
-    3. Momentary switch buttons (6x)
-    4. Standard (3501) Blue 3mm diffused LEDs (4x blue, 2x green)
-    5. 16-Channel Analog/Digital CD74HC4067 Multiplexer (1x)
+    Electronic components used:
+       1. Encoders (1x)
+       2. Potentiometers (8x)
+       3. Momentary switch buttons (6x)
+       4. Standard (3501) Blue 3mm diffused LEDs (4x blue, 2x green)
+       5. 16-Channel Analog/Digital CD74HC4067 Multiplexer (1x)
 
-  Created 09/05/2018
-  By Amir Off
-  Modified 15/06/2018
-  By Amir Off
+    Traktor Pro 2 mappings file: https://goo.gl/JW5b5455pk
 
-     MIDI USB Class Compliant device
+    Created 09/05/2018
+    By Amir Off
+    Modified 15/06/2018
+    By Amir Off
+
+    This is a MIDI USB Class Compliant device
 
 */
 
