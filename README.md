@@ -6,7 +6,7 @@ The controller has been tested on Native Instrument's Traktor Pro 2 and Ableton 
 
 ### MIDI mapping:
 MIDI In can be assigned from the software to any knob, slide or button you map it to, but MIDI Out has to be configured in the `readMIDI()` method in the code.
-##### Traktor Pro 2:
+##### Traktor Pro 2 (MIDI Out) mappings:
 * MIDI Channel = 4
 * MIDI CC 80 = Filter On (Deck A)
 * MIDI CC 81 = Monitor Cue On (Deck A)
