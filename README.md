@@ -7,6 +7,7 @@
 * MIDI CC 80 = Filter On (Deck A)
 * MIDI CC 81 = Monitor Cue On (Deck A)
 * MIDI CC 82 = Filter On (Deck B)
+
 Traktor Pro 2 mappings file: [Download](https://goo.gl/JWAb5h55pk)
 
 ### Electronic components used:
