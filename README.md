@@ -4,14 +4,18 @@ The controller has been tested on Native Instrument's Traktor Pro 2 and Ableton 
 
 > It doesn't require any external software such as "The Hairless MIDI" since this is MIDI USB Class Compliant device.
 
-### MIDI Out mappings:
-
+### MIDI mapping:
+MIDI In can be assigned from the software to any knob, slide or button you map it to, but MIDI Out has to be configured in the `readMIDI()` method in the code.
+##### Traktor Pro 2:
 * MIDI Channel = 4
 * MIDI CC 80 = Filter On (Deck A)
 * MIDI CC 81 = Monitor Cue On (Deck A)
+* MIDI CC 84 = Deck Focus Selector (Deck A)
 * MIDI CC 82 = Filter On (Deck B)
+* MIDI CC 83 = Monitor Cue On (Deck B)
+* MIDI CC 85 = Deck Focus Selector (Deck B)
 
-Traktor Pro 2 mappings file: [Download](https://goo.gl/JWAb5h55pk)
+Mappings file: [Download](https://goo.gl/JWAb5h55pk)
 
 ### Electronic components used:
 
@@ -24,3 +28,6 @@ Traktor Pro 2 mappings file: [Download](https://goo.gl/JWAb5h55pk)
 7. 16-Channel Analog/Digital CD74HC4067 Multiplexer (1x)
 
 Fritzing schematics file: [Download](https://goo.gl/JW5b5455pk)
+
+### USB device name change:
+If you want to change your MIDI controller device name go ahead and read this [here](http://liveelectronics.musinou.net/MIDIdeviceName.php)
