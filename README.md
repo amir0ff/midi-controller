@@ -1,4 +1,4 @@
-## MIDI Controller on Aruidno (Pro) Micro 5V 16MHz / ATmega32u4
+## MIDI Controller on Arduino (Pro) Micro 5V/16MHz
 
 Traktor Pro 2 MIDI Mappings file: [Download](https://goo.gl/JWAb5h55pk)
     
@@ -12,7 +12,7 @@ MIDI Out mappings:
 
 Electronic components used:
 
-    Arduino (Pro) Micro 5V 16MHz
+    Arduino (Pro) Micro 5V/16MHz (ATmega32u4)
     Rotary encoders (1x)
     10K Potentiometers (8x)
     Momentary switch buttons (6x)
