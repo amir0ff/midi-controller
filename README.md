@@ -19,4 +19,4 @@ Traktor Pro 2 mappings file: [Download](https://goo.gl/JWAb5h55pk)
 6. 16-Channel Analog/Digital CD74HC4067 Multiplexer (1x)
 
 
-This is a MIDI USB Class Compliant device
+> This is a MIDI USB Class Compliant device
