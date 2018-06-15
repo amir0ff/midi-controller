@@ -252,9 +252,9 @@ void encoder() {
     if (encoderState[i] != encoderLastState[i]) {
       // If the state of the encoder's output B pin is different from the output A pin it means that the Encoder is rotating clockwise
       if (digitalRead(encoderPins[i][1]) != encoderState[i]) {
-        encoderCounter = 127; // Use this with traktor
+        encoderCounter = 127;
       } else {
-        encoderCounter = 1; // Use this with Traktor
+        encoderCounter = 1;
       }
       controlChange(midiChannel, midiCC + i, encoderCounter);
       MidiUSB.flush();
