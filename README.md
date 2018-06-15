@@ -2,6 +2,8 @@
 This is a generic MIDI controller for DJs and music producers built on ATmega32u4 microcontroller.
 The controller has been tested on Native Instrument's Traktor Pro 2 and Ableton Live 10 and should work on other versions alike.
 
+> It doesn't require any external software such as "The Hairless MIDI" since this is MIDI USB Class Compliant device.
+
 ### MIDI Out mappings:
 
 * MIDI Channel = 4
@@ -22,6 +24,3 @@ Traktor Pro 2 mappings file: [Download](https://goo.gl/JWAb5h55pk)
 7. 16-Channel Analog/Digital CD74HC4067 Multiplexer (1x)
 
 Fritzing schematics file: [Download](https://goo.gl/JW5b5455pk)
-
-
-> This is a MIDI USB Class Compliant device
