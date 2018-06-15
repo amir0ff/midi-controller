@@ -12,12 +12,13 @@ Traktor Pro 2 mappings file: [Download](https://goo.gl/JWAb5h55pk)
 
 ### Electronic components used:
 
-1. Arduino (Pro) Micro 5V/16MHz (ATmega32u4)
-2. Rotary encoders (1x)
-3. 10K Potentiometers (8x)
-4. Momentary switch buttons (6x)
-5. Standard (3501) Blue 3mm diffused LEDs (4x blue) (2x green)
-6. 16-Channel Analog/Digital CD74HC4067 Multiplexer (1x)
+1. Arduino (Pro) Micro 5V/16MHz (ATmega32u4) (1x)
+2. Rotary encoder (1x)
+3. 10k Rotary potentiometer (8x)
+4. 10k Slide potentiometer (3x)
+5. Momentary pushbutton switch (6x)
+6. Standard (3501) Blue 3mm diffused LEDs (4x blue, 2x green)
+7. 16-Channel Analog/Digital CD74HC4067 Multiplexer (1x)
 
 Fritzing schematics file: [Download](https://goo.gl/JW5b5455pk)
 
