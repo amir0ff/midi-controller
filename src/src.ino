@@ -71,7 +71,7 @@ int encoderLastState[NEncoders] = {0};
 /// Buttons Setup ///
 ////////////////////
 const int NButtons = 2; //*
-const int buttonPin[NButtons] = {7, 8}; //* The amount of pushbuttons and their corresponding pin numbers
+const int buttonPin[NButtons] = {8, 10}; //* The amount of pushbuttons and their corresponding pin numbers
 int buttonLastState[NButtons];
 int buttonState[NButtons] = {HIGH}; // pull-up resistor's button initial state is HIGH (normally open when not pressed)
 
@@ -85,8 +85,8 @@ Multiplexer4067 muxPots = Multiplexer4067(2, 3, 4, 5, A0);
 ///////////////////
 /// LEDs Setup ///
 /////////////////
-const int NLEDs = 3; //*
-const int LedPin[NLEDs] = {8, 9, 10}; //* The amount of LEDs and their corresponding pin numbers
+const int NLEDs = 2; //*
+const int LedPin[NLEDs] = {8, 9}; //* The amount of LEDs and their corresponding pin numbers
 int ledLastState[NLEDs];
 int ledState[NLEDs] = {LOW};
 
