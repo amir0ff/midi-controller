@@ -61,7 +61,7 @@
 /// Encoders Setup ///
 /////////////////////
 const int NEncoders = 1; //*
-const int encoderPins[NEncoders][2] = {{2, 3}}; // The amount of encoders and their corresponding pin numbers
+const int encoderPins[NEncoders][2] = {{14, 16}}; // The amount of encoders and their corresponding pin numbers
 int encoderCounter = 0;
 int encoderState[NEncoders] = {0};
 int encoderLastState[NEncoders] = {0};
@@ -70,8 +70,8 @@ int encoderLastState[NEncoders] = {0};
 //////////////////////
 /// Buttons Setup ///
 ////////////////////
-const int NButtons = 1; //*
-const int buttonPin[NButtons] = {7}; //* The amount of pushbuttons and their corresponding pin numbers
+const int NButtons = 2; //*
+const int buttonPin[NButtons] = {7, 8}; //* The amount of pushbuttons and their corresponding pin numbers
 int buttonLastState[NButtons];
 int buttonState[NButtons] = {HIGH}; // pull-up resistor's button initial state is HIGH (normally open when not pressed)
 
@@ -94,12 +94,12 @@ int ledState[NLEDs] = {LOW};
 /////////////////////////////
 /// Potentiometers Setup ///
 ///////////////////////////
-const byte NPots = 1; //*
-const byte NMuxPots = 1; //**
+const byte NPots = 3; //*
+const byte NMuxPots = 2; //**
 const byte totalPots = NPots + NMuxPots;
 
-const byte potPin[NPots] = {A3}; //* The amount of potentiometer and their pin numbers
-const byte muxPotPin[NMuxPots] = {0}; //** The amount of multiplexer potentiometer and their pin numbers
+const byte potPin[NPots] = {A1, A2, A3}; //* The amount of potentiometer and their pin numbers
+const byte muxPotPin[NMuxPots] = {0, 1}; //** The amount of multiplexer potentiometer and their pin numbers
 
 int potState[totalPots] = {0};
 int potLastState[totalPots] = {0};
