@@ -70,10 +70,16 @@ int encoderLastState[NEncoders] = {0};
 //////////////////////
 /// Buttons Setup ///
 ////////////////////
-const int NButtons = 4; //*
-const int buttonPin[NButtons] = {4, 5, 6, 7}; //* The amount of pushbuttons and their corresponding pin numbers
+const int NButtons = 1; //*
+const int buttonPin[NButtons] = {7}; //* The amount of pushbuttons and their corresponding pin numbers
 int buttonLastState[NButtons];
 int buttonState[NButtons] = {HIGH}; // pull-up resistor's button initial state is HIGH (normally open when not pressed)
+
+
+////////////////////
+/// Multiplexer ///
+//////////////////
+Multiplexer4067 muxPots = Multiplexer4067(2, 3, 4, 5, A0);
 
 
 ///////////////////
@@ -88,10 +94,15 @@ int ledState[NLEDs] = {LOW};
 /////////////////////////////
 /// Potentiometers Setup ///
 ///////////////////////////
-const int NPots = 2; //*
-int potPin[NPots] = {A0, A1}; //* The amount of potentiometer and their pin numbers
-int potState[NPots] = {0};
-int potLastState[NPots] = {0};
+const byte NPots = 1; //*
+const byte NMuxPots = 1; //**
+const byte totalPots = NPots + NMuxPots;
+
+const byte potPin[NPots] = {A3}; //* The amount of potentiometer and their pin numbers
+const byte muxPotPin[NMuxPots] = {0}; //** The amount of multiplexer potentiometer and their pin numbers
+
+int potState[totalPots] = {0};
+int potLastState[totalPots] = {0};
 int potVar = 0; // Difference between the current and previous state of the potentiometer
 int midiCState[NPots] = {0}; // Current MIDI value of the potentiometer
 int midiPState[NPots] = {0}; // Previous MIDI value of the potentiometer
@@ -120,6 +131,9 @@ byte midiCC = 0; //* Lowest MIDI CC to be used (0 -  119)
 void setup() {
 
   Serial.begin(115200);
+
+  // Initialize multiplexers
+  muxPots.begin();
 
   // Initialize encoders
   for (int i = 0; i < NEncoders; i++) {
@@ -327,9 +341,17 @@ void leds() {
 /// Potentiometers Function ///
 //////////////////////////////
 void potentiometers() {
-  for (int i = 0; i < NPots; i++) {
+  for (int i = 0; i < NMuxPots; i++) {
+    // Reads the state of multiplexer potentiometers
+    potState[i] = muxPots.readChannel(muxPotPin[i]);
+  }
 
-    potState[i] = analogRead(potPin[i]); // Reads the pot and stores it in the potState variable
+  for (int i = 0; i < NPots; i++) {
+    // Reads  the state of the Arduino potentiometers then store it in the potState variable after extending its index number
+    potState[i + NMuxPots] = analogRead(potPin[i]);
+  }
+
+  for (int i = 0; i < totalPots; i++) {
     midiCState[i] = map(potState[i], 0, 1023, 0, 127); // Maps the reading of the potState to a value usable in midi
     potVar = abs(potState[i] - potLastState[i]); // Calculates the absolute value between the difference between the current and previous state of the pot
 
