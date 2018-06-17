@@ -5,7 +5,7 @@ It has been tested on Native Instrument's Traktor Pro 2 and Ableton Live 10 and 
 *It doesn't require any external software such as "The Hairless MIDI" since this is a MIDI over USB Class Compliant device.*
 
 ### MIDI mapping:
-MIDI In can be assigned from the software to any knob, fader or button you map it to. MIDI Out has to be configured in the `readMIDI()` method in the code and mapped in the software
+MIDI In can be assigned from the software to any knob, fader or button you map it to. MIDI Out has to be configured in the `readMIDI()` method in the code and mapped in the software.
 ##### Traktor Pro 2 (MIDI Out) mappings:
 * MIDI Channel = 4
 * MIDI CC 80 = Filter On (Deck A)
