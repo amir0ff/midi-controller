@@ -70,8 +70,8 @@ int encoderLastState[NEncoders] = {0};
 //////////////////////
 /// Buttons Setup ///
 ////////////////////
-const int NButtons = 2; //*
-const int buttonPin[NButtons] = {8, 10}; //* The amount of pushbuttons and their corresponding pin numbers
+const int NButtons = 1; //*
+const int buttonPin[NButtons] = {6}; //* The amount of pushbuttons and their corresponding pin numbers
 int buttonLastState[NButtons];
 int buttonState[NButtons] = {HIGH}; // pull-up resistor's button initial state is HIGH (normally open when not pressed)
 
@@ -94,23 +94,23 @@ int ledState[NLEDs] = {LOW};
 /////////////////////////////
 /// Potentiometers Setup ///
 ///////////////////////////
-const byte NPots = 3; //*
+const byte NPots = 2; //*
 const byte NMuxPots = 2; //**
 const byte totalPots = NPots + NMuxPots;
 
-const byte potPin[NPots] = {A1, A2, A3}; //* The amount of potentiometer and their pin numbers
+const byte potPin[NPots] = {A2, A3}; //* The amount of potentiometer and their pin numbers
 const byte muxPotPin[NMuxPots] = {0, 1}; //** The amount of multiplexer potentiometer and their pin numbers
 
 int potState[totalPots] = {0};
 int potLastState[totalPots] = {0};
 int potVar = 0; // Difference between the current and previous state of the potentiometer
-int midiCState[NPots] = {0}; // Current MIDI value of the potentiometer
-int midiPState[NPots] = {0}; // Previous MIDI value of the potentiometer
+int midiCState[totalPots] = {0}; // Current MIDI value of the potentiometer
+int midiPState[totalPots] = {0}; // Previous MIDI value of the potentiometer
 int TIMEOUT = 300; //* Amount of time the potentiometer will be read after it exceeds the varThreshold
 int varThreshold = 6; //* Threshold for the potentiometer signal variation
 boolean isPotMoving = true; // If the potentiometer is moving
-unsigned long PTime[NPots] = {0}; // Previously stored time
-unsigned long timer[NPots] = {0}; // Stores the time that has elapsed since the timer was reset
+unsigned long PTime[totalPots] = {0}; // Previously stored time
+unsigned long timer[totalPots] = {0}; // Stores the time that has elapsed since the timer was reset
 
 
 //////////////////////////////////////
