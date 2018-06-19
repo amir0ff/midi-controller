@@ -2,10 +2,10 @@
 This is a generic MIDI controller for DJs and music producers built on the ATmega32u4 microcontroller.
 It has been tested on Native Instrument's Traktor Pro 2 and Ableton Live 10 and should work on other versions alike.
 
-> It doesn't require any external software such as "The Hairless MIDI" since this is a MIDI USB Class Compliant device.
+*It doesn't require any external software such as "The Hairless MIDI" since this is a MIDI over USB Class Compliant device.*
 
 ### MIDI mapping:
-MIDI In can be assigned from the software to any knob, fader or button you map it to. MIDI Out has to be configured in the `readMIDI()` method in the code.
+MIDI In can be assigned from the software to any knob, fader or button you map it to. MIDI Out has to be configured in the `readMIDI()` method in the code and mapped in the software.
 ##### Traktor Pro 2 (MIDI Out) mappings:
 * MIDI Channel = 4
 * MIDI CC 80 = Filter On (Deck A)
@@ -30,4 +30,4 @@ Mappings file: [Download](https://goo.gl/JWAb5h55pk)
 Fritzing schematics file: [Download](https://goo.gl/JW5b5455pk)
 
 ### USB device name change:
-If you want to change your MIDI controller device name go ahead and read this [here](http://liveelectronics.musinou.net/MIDIdeviceName.php)
+If you want to change your MIDI controller device name go ahead and read this [here](http://liveelectronics.musinou.net/MIDIdeviceName.php).
