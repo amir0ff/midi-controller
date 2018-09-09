@@ -1,4 +1,6 @@
 # 🎚️🎛️🎚️ MIDI Controller on Arduino (Pro) Micro 5V/16MHz
+![midi_controller](https://image.ibb.co/cnQh9p/20180607_194234.jpg)
+
 This is a generic MIDI controller for DJs and music producers built on the ATmega32u4 microcontroller.
 It has been tested on Native Instrument's Traktor Pro 2 and Ableton Live 10 and should work on other versions alike.
 
