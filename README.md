@@ -15,7 +15,7 @@ MIDI In can be assigned from the software to any knob, fader or button you map i
 * MIDI CC 83 = Monitor Cue On (Deck B)
 * MIDI CC 85 = Deck Focus Selector (Deck B)
 
-Mappings file: [Download](https://goo.gl/JWAb5h55pk)
+Mappings file: [Download](https://goo.gl/JWAb5t55pk)
 
 ### Electronic components used:
 
