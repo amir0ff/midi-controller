@@ -28,7 +28,7 @@ Mappings file: [Download](https://goo.gl/JWBb5t55pk)
 6. Standard (3501) Blue 3mm diffused LEDs (4x blue, 2x green)
 7. 16-Channel Analog/Digital CD74HC4067 Multiplexer (1x)
 
-Fritzing schematics file: [Download](https://goo.gl/JV5s5355pk)
+Fritzing schematics file: [Download](https://goo.gl/JV5b5355pk)
 
 ### USB device name change:
 If you want to change your MIDI controller device name go ahead and read this [here](http://liveelectronics.musinou.net/MIDIdeviceName.php).
