@@ -16,7 +16,7 @@ MIDI In can be assigned from the software to any knob, fader or button you map i
 * MIDI CC 83 = Monitor Cue On (Deck B)
 * MIDI CC 85 = Deck Focus Selector (Deck B)
 
-Mappings file: [Download](https://goo.gl/JWBb5t55pk)
+Traktor MIDI mappings file: [Download](https://amiroff.me/files/midi-controller-traktor-midi-mappings.tsi)
 
 ### Electronic components used:
 
@@ -28,7 +28,7 @@ Mappings file: [Download](https://goo.gl/JWBb5t55pk)
 6. Standard (3501) Blue 3mm diffused LEDs (4x blue, 2x green)
 7. 16-Channel Analog/Digital CD74HC4067 Multiplexer (1x)
 
-Fritzing schematics file: [Download](https://goo.gl/JV5b5355pk)
+Fritzing schematics file: [Download](https://amiroff.me/files/midi-controller-fritzing-schematic.fzz)
 
 ### USB device name change:
 If you want to change your MIDI controller device name go ahead and read this [here](http://liveelectronics.musinou.net/MIDIdeviceName.php).
